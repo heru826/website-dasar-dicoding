@@ -1,0 +1,474 @@
+:root {
+  --pad-padding: 20px 30px;
+  --uk-min-height: 100vh;
+  --bg-background: transparent;
+  --boy-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: 1px solid red;
+}
+body {
+  background: rgb(56, 234, 148);
+  width: 100%;
+  color: #2d3748;
+  max-width: 1200px;
+}
+/* navbar */
+header {
+  width: 100%;
+  position: fixed;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  background: rgba(135, 206, 235, 0.6);
+  z-index: 999;
+}
+.navbar {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.area-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.area-logo img {
+  width: 45px;
+  height: 45px;
+}
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: default;
+  margin-left: -35px;
+}
+/* menu-nav */
+.area-nav {
+  display: flex;
+  align-items: center;
+  gap: 40;
+}
+.menu-nav {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.menu-nav li a {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+.menu-nav li a:hover {
+  color: #0ef;
+}
+
+/* halaman home */
+.home {
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-content h1 {
+  font-size: 45px;
+}
+.home-content p {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.profile-photo {
+  display: flex;
+  margin-top: -30px;
+  /* margin-right: -40px; */
+}
+.profile-photo img {
+  width: 600px;
+  height: auto;
+  object-fit: cover;
+}
+.btn-contact {
+  padding: 5px 8px;
+  width: 120px;
+  background: #2d3748;
+  border-radius: 10px;
+  color: antiquewhite;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btn-contact:hover {
+  opacity: 0.7;
+}
+
+/* halaman pemrograman */
+.prom {
+  padding: var(--pad-padding);
+  min-height: var(--uk-min-height);
+  background: var(--bg-background);
+  text-align: center;
+  box-sizing: border-box;
+}
+.heador {
+  font-size: 40px;
+  margin-top: 100px;
+}
+.prom-container {
+  margin-left: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+.prom-box {
+  width: 250px;
+  height: 230px;
+  padding: 8px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: var(--boy-box-shadow);
+  transition: 0.3s;
+}
+.prom-box:hover {
+  box-shadow: 0 0 15px #0ef;
+  transform: scale(1.03);
+}
+.prom-box img {
+  width: 90px;
+  height: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.prom-box h2 {
+  font-size: 20px;
+}
+.prom-box p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: justify;
+}
+.btn-prom {
+  padding: 5px 10px;
+  background: #0ef;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+.btn-prom:hover {
+  opacity: 0.7;
+}
+
+/* halaman project */
+.ject {
+  max-width: 1200px;
+  padding: var(--pad-padding);
+  box-sizing: border-box;
+  background: var(--bg-background);
+}
+.ject h2 {
+  font-size: 30px;
+  margin-top: 80px;
+  text-align: center;
+}
+.ject-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-left: 25px; */
+  margin-top: 20px;
+  width: 100%;
+  gap: 10px;
+}
+.ject-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  width: 565px;
+  height: 350px;
+  padding: 8px;
+  box-shadow: var(--boy-box-shadow);
+  transition: 0.3s;
+}
+.ject-box:hover {
+  box-shadow: 0 0 15px #0ef;
+  transform: scale(1.03);
+}
+.ject-box h2 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.ject-box img {
+  /* width: 540px; */
+  height: 300px;
+  width: 100%;
+}
+
+/* halaman profile */
+.profl {
+  width: 100%;
+  padding: var(--pad-padding);
+  /* box-sizing: border-box; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profl-cont {
+  margin-top: 20px;
+  display: flex;
+  gap: 50px;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  max-width: 800px;
+  transition: 0.3s;
+}
+.profl-cont:hover {
+  box-shadow: 0 0 15px #0ef;
+  transform: scale(1.03);
+}
+.kendur {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 80px;
+}
+.profl-cont img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+.prolf-box {
+  background: white;
+  margin-top: 20px;
+  box-shadow: var(--boy-box-shadow);
+}
+.prolf-box h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+/* tabel */
+.abel {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  border-collapse: collapse;
+}
+.abel td {
+  width: 360px;
+  padding: 3px 0;
+  font-size: 18px;
+}
+.label {
+  display: inline-block;
+  width: 100px;
+  font-size: 18px;
+}
+
+/* halaman cotant */
+.cont {
+  width: 100%;
+  padding: var(--pad-padding);
+  /* box-sizing: border-box; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.kendor {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 80px;
+}
+.cont-iner {
+  margin-top: 50px;
+  width: 350px;
+  background: white;
+  padding: 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.cont-iner:hover {
+  box-shadow: 0 0 15px #0ef;
+  transform: scale(1.03);
+}
+.cont-iner label {
+  font-size: 20px;
+  margin-top: 10px;
+  color: black;
+}
+.cont-iner input,
+.cont-iner textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+}
+.btn-son {
+  display: block;
+  margin: 30px auto 0;
+  width: 80px;
+  background: #0ef;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 30px;
+  text-align: center;
+}
+.btn-son:hover {
+  opacity: 0.7;
+}
+.footer {
+  margin-top: 50px;
+  padding: 10px 30px;
+  background: white;
+  color: black;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    width: 410px;
+  }
+  .navbar {
+    flex-direction: column;
+    display: flex;
+  }
+  .home {
+    flex-wrap: wrap;
+  }
+  .menu-nav {
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .home-content {
+    margin-top: 120px;
+    margin-bottom: -30px;
+  }
+  .home-content h1 {
+    font-size: 30px;
+  }
+  .home-content p {
+    font-size: 16px;
+  }
+  /* .profile-photo {
+    margin-top: -12 00px;
+  } */
+  .profile-photo img {
+    margin-top: -20px;
+    width: 350px;
+    height: 300px;
+    /* margin-left: 0; */
+  }
+
+  /* halaman bahasa pemrogrman */
+  .heador {
+    margin-top: 80px;
+    font-size: 35px;
+  }
+  .prom-container {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+  .prom-box {
+    width: 200px;
+    height: 180px;
+  }
+  .prom-box img {
+    width: 70px;
+    height: auto;
+  }
+  .prom-box h2 {
+    font-size: 16px;
+    /* margin-top: 0;
+    margin-bottom: 0; */
+  }
+  .btn-prom {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  /* halaman project */
+  .ject {
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* text-align: center; */
+  }
+  .ject h2 {
+    margin-top: 80px;
+    text-align: center;
+    width: 100%;
+  }
+  .ject-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .ject-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 370px;
+    height: 250px;
+  }
+  .ject-box h2 {
+    margin-top: 5px;
+    text-align: left;
+  }
+
+  /* halaman profile */
+  .profl-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .prolf-box h2 {
+    text-align: center;
+  }
+  /* halaman tabel */
+  .abel td {
+    width: 360px;
+    padding: 3px 0;
+    font-size: 16px;
+  }
+  .label {
+    display: inline-block;
+    width: 70px;
+    font-size: 18px;
+    font-size: 16px;
+  }
+}
