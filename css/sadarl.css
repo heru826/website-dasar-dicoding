@@ -9,8 +9,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* scroll-behavior: smooth; */
-  outline: 1px solid red;
+  scroll-behavior: smooth;
+  /* outline: 1px solid red; */
 }
 body {
   background: rgb(56, 234, 148);
